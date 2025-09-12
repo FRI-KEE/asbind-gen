@@ -1,0 +1,4 @@
+.vscode/
+
+# Python virtual environment
+.venv/
