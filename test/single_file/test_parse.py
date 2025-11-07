@@ -16,9 +16,6 @@ def test_parse_single_file():
     functions = analyzer.get_functions()
     print(functions)
 
-    expected_functions = ["f1", "f2"]
-    
-    assert set(functions) == set(expected_functions), f"Expected {expected_functions}, got {functions}"
-
-if  __name__ == "__main__":
-    test_parse_single_file()
+    assert "f1" in functions
+    assert "f3" in functions
+    assert "f2" not in functions  # f2 is not annotated
